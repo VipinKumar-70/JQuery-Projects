@@ -39,7 +39,7 @@ The jQuery library includes the following core features:
 
 ### To-Do List
 
-Welcome to my jQuery To-Do List project! This application demonstrates a simple and effective task management system using HTML, CSS, and jQuery. Users can add tasks by typing them into the input field and pressing "Enter" or clicking the "Add" button. To remove tasks, simply click the trash icon next to each task item. This project illustrates the practical use of jQuery for manipulating DOM elements and handling user interactions, making it ideal for learning basic web development concepts. - [To-Do List Demo](https://vipinkumar-70.github.io/JQuery-Projects/)
+Welcome to my jQuery To-Do List project! This application demonstrates a simple and effective task management system using HTML, CSS, and jQuery. Users can add tasks by typing them into the input field and pressing "Enter" or clicking the "Add" button. To remove tasks, simply click the trash icon next to each task item. This project illustrates the practical use of jQuery for manipulating DOM elements and handling user interactions, making it ideal for learning basic web development concepts. - [See To-Do List](https://vipinkumar-70.github.io/JQuery-Projects/)
 
 ---
 
