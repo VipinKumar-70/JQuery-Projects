@@ -5,93 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/97f789bf75.js" crossorigin="anonymous"></script>
 </head>
-<style>
-    body {
-        background-color: #0f2245;
-    }
-
-    .main {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    h1 {
-        color: #f7f1e3;
-        letter-spacing: 5px;
-    }
-
-    .container {
-        background-color: #202939;
-        padding: 30px;
-        border-radius: 10px;
-        filter: drop-shadow(10px 10px 4px black);
-    }
-
-
-    .btn {
-        padding: 10px 40px;
-        font-size: larger;
-        color: white;
-        background-color: blue;
-        cursor: pointer;
-        filter: drop-shadow(3px 3px 2px black);
-        transition: all .4s ease;
-    }
-
-    .btn:hover {
-        background-color: rgb(16, 16, 170);
-    }
-
-    input {
-        padding: 10px 10px;
-        font-size: larger;
-        text-transform: capitalize;
-        filter: drop-shadow(3px 3px 2px black);
-    }
-
-    .todo-list-content {
-        width: 400px;
-    }
-
-    ol li {
-        font-size: larger;
-        margin-bottom: 10px;
-        background-color: #3b414b;
-        color: white;
-        position: relative;
-        text-transform: capitalize;
-        padding: 10px 40px 10px 10px;
-        display: flex;
-        align-items: center;
-        word-wrap: break-word;
-        border-radius: 10px;
-        filter: drop-shadow(3px 3px 2px black);
-    }
-
-    ol li i {
-        position: absolute;
-        right: 10px;
-        display: flex;
-        align-items: center;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #575a5a;
-        transition: all .4s ease;
-    }
-
-    ol li i:hover {
-        background-color: #767e7e;
-        color: red;
-    }
-</style>
 
 <body>
     <div class="main">
