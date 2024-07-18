@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="https://kit.fontawesome.com/97f789bf75.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: #0f2245;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #f7f1e3;
+        letter-spacing: 5px;
+    }
+
+    .container {
+        background-color: #202939;
+        padding: 30px;
+        border-radius: 10px;
+        filter: drop-shadow(10px 10px 4px black);
+    }
+
+
+    .btn {
+        padding: 10px 40px;
+        font-size: larger;
+        color: white;
+        background-color: blue;
+        cursor: pointer;
+        filter: drop-shadow(3px 3px 2px black);
+        transition: all .4s ease;
+    }
+
+    .btn:hover {
+        background-color: rgb(16, 16, 170);
+    }
+
+    input {
+        padding: 10px 10px;
+        font-size: larger;
+        text-transform: capitalize;
+        filter: drop-shadow(3px 3px 2px black);
+    }
+
+    .todo-list-content {
+        width: 400px;
+    }
+
+    ol li {
+        font-size: larger;
+        margin-bottom: 10px;
+        background-color: #3b414b;
+        color: white;
+        position: relative;
+        text-transform: capitalize;
+        padding: 10px 40px 10px 10px;
+        display: flex;
+        align-items: center;
+        word-wrap: break-word;
+        border-radius: 10px;
+        filter: drop-shadow(3px 3px 2px black);
+    }
+
+    ol li i {
+        position: absolute;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #575a5a;
+        transition: all .4s ease;
+    }
+
+    ol li i:hover {
+        background-color: #767e7e;
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Todo List</h1>
+        <div class="container">
+            <input type="text" id="addNote" placeholder="Enter Note to Share">
+            <button class="btn addbtn">Add Note</button>
+            <div class="todo-list-content">
+                <ol></ol>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        // Add Element
+        $(".addbtn").click(function () {
+            let value = $("input").val();
+
+            if (value == "") {
+                alert("Please Enter Note");
+            }
+            else {
+                $("ol").append("<li>" + value + "<i class='fa-solid fa-trash'></i>" + "</li>");
+                $("input").val("");
+            }
+
+
+            // Remove Element
+            $(".fa-solid").click(function () {
+                $("li").addClass("removeEle");
+                $(".removeEle").click(function () {
+                    $(this).fadeOut("slow");
+                });
+            });
+        });
+    });
+</script>
+
+</html>
