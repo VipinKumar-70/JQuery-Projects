@@ -5,9 +5,9 @@ Welcome to my repository showcasing various projects developed with jQuery.
 ## Table of Contents
 
 - [JQuery](#jQuery)
-- [What is jQuery?](#what-is-jquery)
-- [Why use jQuery?](#why-use-jquery)
-- [Features of jQuery](#features-of-jquery)
+  - [What is jQuery?](#what-is-jquery)
+  - [Why use jQuery?](#why-use-jquery)
+  - [Features of jQuery](#features-of-jquery)
 - [Project Showcase](#project-showcase)
   - [To-Do List](#to-do-list)
 
